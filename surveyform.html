@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey form (FCC)</title>
+    <link href="Css/surveyform.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1 id = "title" text-align: center>Survey Form</h1>
+    <p id = "description">This is a short survey to gather general information.</p>
+    <form id = "survey-form">
+        <div class = "checkin-container">
+            <div></div>
+            <label>Name:</label>
+                <input id="name" name = "name" type="text" size="25" maxlength="50" placeholder="Name"/>
+                <br>
+            <label>Email:</label>
+                <input id = "email" name = "email" type = "text" size = "25" maxlength = "50" placeholder="Email" />
+                <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                        Email entered was not formatted correctly. Please re-type.
+                      </div>
+            <label>Age:</label>
+                <input id = "age" name = "age" type = "number" size = "25" maxlength = "2" placeholder = "Age"/><br/>
+                <br/>
+
+        validation error message if email not valid
+    insert number field(?) (number-label)<br/>
+        validation error message if non-number input
+        validation error message if numbers beyond min-max
+    build dropdown (dropdown)<br/>
+    <label for = "">
+        <input id="" type="radio" name="">__
+    </label>
+    <label for="">
+        <input id="" type="radio" name="">__
+    </label>
+    radio buttons (grouped with name)<Br/>
+    <label for = "">
+        <input type = "checkbox" name = "" id = "">__
+    </label>
+    <label for = "">
+            <input type = "checkbox" name = "" id = "">__
+        </label>
+    <label for = "">
+        <input type = "checkbox" name = "" id = "">__
+    </label>    
+    checkboxes (value)<br/>
+    comments textarea<br/>
+        <button type="submit">Submit Nonsense</button>
+    submit button<br/>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+<script src="Js/survey.js"></script>
+</body>
+</html>
